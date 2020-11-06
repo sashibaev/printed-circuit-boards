@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+
+  background-color: $light-color;
+
+  /* Временно */
+  outline: 1px solid #0000ff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    width: auto;
+    min-width: 768px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    min-width: 320px;
+  }
+}
