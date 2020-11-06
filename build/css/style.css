@@ -183,6 +183,14 @@ html {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff; }
 
+.page-header__nav-list a:hover,
+.page-header__nav-list a:focus {
+  color: #788891;
+  opacity: 0.4; }
+
+.page-header__nav-list a:active {
+  opacity: 1; }
+
 .page-header__nav-list p {
   margin: 0;
   padding: 0; }

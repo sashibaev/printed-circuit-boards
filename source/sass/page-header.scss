@@ -73,12 +73,13 @@
 
 .page-header__logo-text p {
   margin: 0;
+  padding: 0;
 
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
   font-family: $font-family-additional;
-  color: $light-dark-color;
+  color: $less-light-color;
 }
 
 .page-header__nav-list {
@@ -112,7 +113,7 @@
 
 .page-header__nav-list a:hover,
 .page-header__nav-list a:focus {
-  color: $light-dark-color;
+  color: $less-light-color;
   opacity: 0.4;
 }
 
