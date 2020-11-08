@@ -166,7 +166,7 @@
   }
 
   .page-header__nav-list {
-    min-width: 98px;
+    min-width: 82px;
     margin: 0;
     padding: 0;
   }
@@ -175,11 +175,14 @@
     display: block;
 
     margin: 0;
-    padding: 0;
   }
 
   .page-header__nav-list p {
     display: none;
+  }
+
+  .page-header__nav-list svg {
+    margin: 0;
   }
 
   .page-header__phone-call {
@@ -194,7 +197,7 @@
     max-width: auto;
     width: 768px;
     height: 94px;
-    padding-right: 8px;
+    padding-right: 24px;
     padding-left: 25px;
   }
 }
@@ -219,14 +222,14 @@
   }
 
   .page-header__nav-list {
-    min-width: 88px;
+    min-width: 72px;
   }
 
   .page-header__wrapper {
     width: auto;
     min-width: 320px;
     height: 74px;
-    padding-right: 0;
+    padding-right: 16px;
     padding-left: 16px;
   }
 }
