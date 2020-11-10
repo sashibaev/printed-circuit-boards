@@ -39,6 +39,15 @@
   background-color: $background-button-color;
 }
 
+.home-screen__button a:hover,
+.home-screen__button a:focus {
+  opacity: 0.5;
+}
+
+.home-screen__button a:active {
+  opacity: 0.8;
+}
+
 .home-screen__button .home-screen__link-additional {
   display: none;
 }

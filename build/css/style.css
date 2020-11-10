@@ -610,9 +610,13 @@ html {
     padding: 0; } }
 
 .advantages {
-  max-width: 1920px; }
+  max-width: 1920px;
+  padding-top: 113px;
+  padding-left: 16px; }
 
 .advantages h2 {
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -622,16 +626,152 @@ html {
 .advantages li {
   width: 570px;
   min-height: 299px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding-top: 40px;
+  padding-left: 42px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
   list-style: none; }
 
+.advantages li:hover,
+.advantages li:focus {
+  padding-top: 41px;
+  padding-left: 45px;
+  background-color: #00b2ff;
+  border: none;
+  cursor: pointer; }
+
+.advantages li:hover h2,
+.advantages li:focus h2 {
+  color: #ffffff; }
+
+.advantages li:hover p,
+.advantages li:focus p {
+  color: #ffffff; }
+
+.advantages li:hover svg,
+.advantages li:focus svg {
+  fill: #ffffff; }
+
+.advantages .advantages__privacy {
+  padding-top: 44px; }
+
+.advantages .advantages__privacy:hover,
+.advantages .advantages__privacy:focus {
+  padding-top: 45px; }
+
 .advantages p {
+  width: 483px;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   font-family: "PT Mono", "Arial", sans-serif;
   color: #666666; }
+
+.advantages svg {
+  margin-bottom: 15px; }
+
+.advantages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0; }
+
+@media (max-width: 1023px) {
+  .advantages {
+    max-width: auto;
+    width: 768px;
+    padding: 0;
+    padding-top: 55px; }
+  .advantages h2 {
+    margin-bottom: 7px; }
+  .advantages li {
+    width: 345px;
+    min-height: 232px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding-top: 22px;
+    padding-left: 25px;
+    border-left: 2px solid #00b2ff; }
+  .advantages li:hover,
+  .advantages li:focus {
+    padding-top: 23px;
+    padding-left: 27px; }
+  .advantages .advantages__privacy {
+    padding-top: 22px; }
+  .advantages .advantages__privacy:hover,
+  .advantages .advantages__privacy:focus {
+    padding-top: 23px; }
+  .advantages .advantages__item {
+    min-height: 306px; }
+  .advantages p {
+    width: 296px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "PT Mono", "Arial", sans-serif;
+    color: #666666; }
+  .advantages__privacy h2 {
+    margin-bottom: 14px; }
+  .advantages span {
+    display: none; }
+  .advantages svg {
+    margin-bottom: 5px; }
+  .advantages ul {
+    max-width: auto;
+    width: 768px; } }
+
+@media (max-width: 767px) {
+  .advantages {
+    width: 320px;
+    padding-top: 37px; }
+  .advantages h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px; }
+  .advantages li {
+    width: 290px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+    padding-top: 22px;
+    padding-left: 25px;
+    border-left: 2px solid #00b2ff; }
+  .advantages li:hover,
+  .advantages li:focus {
+    padding-top: 23px;
+    padding-left: 27px; }
+  .advantages .advantages__deadlines {
+    padding-top: 24px; }
+  .advantages .advantages__cost {
+    min-height: 244px; }
+  .advantages .advantages__item {
+    min-height: 310px; }
+  .advantages p {
+    width: 245px; }
+  .advantages__cost h2 {
+    margin-bottom: 15px; }
+  .advantages__privacy h2 {
+    margin-bottom: 13px; }
+  .advantages__providers h2 {
+    margin-bottom: 7px; }
+  .advantages__providers p {
+    width: 251px; }
+  .advantages svg {
+    margin-bottom: 8px; }
+  .advantages ul {
+    width: 320px; } }
 
 /* Подвал сайта */
 .page-footer {
