@@ -55,8 +55,41 @@
     </header>
 
     <main class="page-main">
-      <!--<h1>Печатные платы</h1>-->
-    </main>
+      <section class="page-main__home-screen home-screen">
+        <div class="home-screen__wrapper">
+          <div class="home-screen__img-wrapper">
+            <div class="home-screen__img-circle"></div>
+            <div class="home-screen__img">
+              <picture>
+                <!-- 1х: 294px; 2x: 588px -->
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/Untitled12_mobile.webp 1x, img/Untitled12_mobile@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Untitled12_tablet.webp 1x, img/Untitled12_tablet@2x.webp 2x">
+                <!-- 1х: 705px; 2x: 1410px -->
+                <source type="image/webp" srcset="img/Untitled12_desktop.webp 1x, img/Untitled12_desktop@2x.webp 2x">
+
+                <!-- 1х: 294px; 2x: 588px -->
+                <source media="(max-width: 767px)" srcset="img/Untitled12_mobile.png 1x, img/Untitled12_mobile@2x.png 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(max-width: 1023px)" srcset="img/Untitled12_tablet.png 1x, img/Untitled12_tablet@2x.png 2x">
+                <!-- 1х: 705px; 2x: 1410px -->
+                <img src="img/Untitled12_desktop.png" srcset="img/Untitled12_desktop@2x.png" width="705" height="515" alt="Печатные платы">
+              </picture>
+            </div>
+          </div>
+          <div class="home-screen__text">
+            <h1>Печатные платы</h1>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <div class="home-screen__button">
+              <a class="home-screen__link-main" href="">Получить бесплатную консультацию</a>
+              <a class="home-screen__link-additional" href="">Бесплатная консультация</a>
+            </div>
+            <div class="home-screen__scroll">
+              <a href="">Скролл вниз</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
