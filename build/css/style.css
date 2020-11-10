@@ -324,6 +324,13 @@ html {
   color: #ffffff;
   background-color: #00b2ff; }
 
+.home-screen__button a:hover,
+.home-screen__button a:focus {
+  opacity: 0.5; }
+
+.home-screen__button a:active {
+  opacity: 0.8; }
+
 .home-screen__button .home-screen__link-additional {
   display: none; }
 
@@ -692,6 +699,7 @@ html {
   .advantages {
     max-width: auto;
     width: 768px;
+    margin: 0 auto;
     padding: 0;
     padding-top: 55px; }
   .advantages h2 {
@@ -772,6 +780,138 @@ html {
     margin-bottom: 8px; }
   .advantages ul {
     width: 320px; } }
+
+.about-company {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-right: 40px;
+  padding-bottom: 70px;
+  padding-left: 254px; }
+
+.about-company::before {
+  position: absolute;
+  content: url("../img/mask_group_desktop.svg");
+  top: 80px;
+  left: 44px;
+  z-index: 2;
+  width: 220px;
+  height: 317px; }
+
+.about-company a {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  min-height: 45px;
+  margin-top: 20px;
+  padding-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 5px; }
+
+.about-company a:hover,
+.about-company a:focus {
+  opacity: 0.5; }
+
+.about-company a:active {
+  opacity: 1; }
+
+.about-company__ellipsis {
+  display: none; }
+
+.about-company h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #666666; }
+
+.about-company__link {
+  margin: 0;
+  padding: 0; }
+
+.about-company p {
+  max-width: 984px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #666666; }
+
+@media (max-width: 1023px) {
+  .about-company {
+    max-width: auto;
+    min-width: 768px;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    padding-left: 211px; }
+  .about-company::before {
+    content: url("../img/mask_group_tablet.svg");
+    top: 24px;
+    left: 0;
+    width: 244px;
+    height: 362px; }
+  .about-company a {
+    margin-top: 20px; }
+  .about-company__ellipsis {
+    display: inline-block;
+    vertical-align: top; }
+  .about-company h2 {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 45px; }
+  .about-company p {
+    max-width: auto;
+    width: 100%;
+    margin-bottom: 20px; }
+  .about-company__text {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .about-company {
+    max-width: auto;
+    min-width: 320px;
+    padding-top: 38px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+    padding-left: 15px; }
+  .about-company::before {
+    content: none; }
+  .about-company a {
+    margin-top: 0; }
+  .about-company__ellipsis {
+    display: inline-block;
+    vertical-align: top; }
+  .about-company h2 {
+    width: 290px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 28px;
+    line-height: 39px; }
+  .about-company__link {
+    width: 290px;
+    margin: 0 auto; }
+  .about-company p {
+    margin-bottom: 40px; }
+  .about-company .about-company__paragraph {
+    margin-bottom: 28px; }
+  .about-company__text {
+    display: none; } }
 
 /* Подвал сайта */
 .page-footer {
