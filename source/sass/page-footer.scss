@@ -41,7 +41,9 @@
 
   font-size: 15px;
   font-weight: 400;
+}
 
+.page-footer__contacts-list a {
   opacity: 0.5;
 }
 
@@ -59,6 +61,17 @@
 
 .page-footer__logo a {
   margin-right: 16px;
+
+  cursor: pointer;
+}
+
+.page-footer__logo a:hover,
+.page-footer__logo a:focus {
+  opacity: 0.5;
+}
+
+.page-footer__logo a:active {
+  opacity: 0.8;
 }
 
 .page-footer__logo-text {

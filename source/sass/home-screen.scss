@@ -1,17 +1,34 @@
 .home-screen {
+  position: relative;
+
   width: 100%;
   margin: 0;
   padding: 0;
 
-  background-color: $background-nav-color;
-  background-image: url("../img/image_2_fon_desktop.jpg");
+  background-color: $background-dark-color;
+}
+
+.home-screen::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $background-dark-color;
+  background-image: url("../img/image_2_fon_desktop.png");
   background-repeat: repeat;
   background-position: 0 -120px;
   background-size: 100% 950px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/image_2_fon_desktop@2x.jpg");
+    background-image: url("../img/image_2_fon_desktop@2x.png");
   }
+
+  opacity: 0.8;
 }
 
 .home-screen__button {
@@ -115,6 +132,15 @@
   transform-origin: left top 0;
 }
 
+.home-screen__scroll:hover,
+.home-screen__scroll:focus {
+  opacity: 1;
+}
+
+.home-screen__scroll:active {
+  opacity: 0.8;
+}
+
 .home-screen__scroll a {
   font-size: 14px;
   font-weight: 400;
@@ -175,6 +201,7 @@
 
 .home-screen__wrapper {
   position: relative;
+  z-index: 2;
 
   display: flex;
   flex-direction: row-reverse;
@@ -189,14 +216,14 @@
 }
 
 @media (max-width: $tablet-width) {
-  .home-screen {
-    background-image: url("../img/image_2_fon_tablet.jpg");
+  .home-screen::before {
+    background-image: url("../img/image_2_fon_tablet.webp");
     background-repeat: no-repeat;
     background-position: 0 -94px;
     background-size: 100% 873px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/image_2_fon_tablet@2x.jpg");
+      background-image: url("../img/image_2_fon_tablet@2x.webp");
     }
   }
 
@@ -299,13 +326,13 @@
 }
 
 @media (max-width: $mobile-width) {
-  .home-screen {
-    background-image: url("../img/image_2_fon_mobile.jpg");
+  .home-screen::before {
+    background-image: url("../img/image_2_fon_mobile.webp");
     background-position: 0 -74px;
     background-size: 100% 834px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/image_2_fon_mobile@2x.jpg");
+      background-image: url("../img/image_2_fon_mobile@2x.webp");
     }
   }
 

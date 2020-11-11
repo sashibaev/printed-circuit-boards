@@ -1,19 +1,36 @@
 .page-header {
+  position: relative;
+
   width: 100%;
   margin: 0;
   padding: 0;
 
   color: $light-color;
 
-  background-color: $background-nav-color;
-  background-image: url("../img/image_2_fon_desktop.jpg");
+  background-color: $background-dark-color;
+}
+
+.page-header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $background-dark-color;
+  background-image: url("../img/image_2_fon_desktop.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 950px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/image_2_fon_desktop@2x.jpg");
+    background-image: url("../img/image_2_fon_desktop@2x.png");
   }
+
+  opacity: 0.8;
 }
 
 .page-header__envelope {
@@ -39,6 +56,15 @@
   border-radius: 5px;
 }
 
+.page-header__feedback:hover,
+.page-header__feedback:focus {
+  opacity: 0.5;
+}
+
+.page-header__feedback:active {
+  opacity: 0.8;
+}
+
 .page-header__feedback a {
   color: $light-color;
 }
@@ -49,6 +75,17 @@
 
 .page-header__logo a {
   margin-right: 18px;
+
+  cursor: pointer;
+}
+
+.page-header__logo a:hover,
+.page-header__logo a:focus {
+  opacity: 0.5;
+}
+
+.page-header__logo a:active {
+  opacity: 0.8;
 }
 
 .page-header__logo svg {
@@ -133,22 +170,26 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+  z-index: 3;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1424px;
+  max-width: 1484px;
   height: 120px;
   margin: 0 auto;
-  padding-left: 13px;
+  padding-right: 30px;
+  padding-left: 43px;
 }
 
 @media (max-width: $tablet-width) {
-  .page-header {
-    background-image: url("../img/image_2_fon_tablet.jpg");
+  .page-header::before {
+    background-image: url("../img/image_2_fon_tablet.webp");
     background-size: 100% 686px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/image_2_fon_tablet@2x.jpg");
+      background-image: url("../img/image_2_fon_tablet@2x.webp");
     }
   }
 
@@ -198,12 +239,12 @@
 }
 
 @media (max-width: $mobile-width) {
-  .page-header {
-    background-image: url("../img/image_2_fon_mobile.jpg");
+  .page-header::before {
+    background-image: url("../img/image_2_fon_mobile.webp");
     background-size: 100% 647px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/image_2_fon_mobile@2x.jpg");
+      background-image: url("../img/image_2_fon_mobile@2x.webp");
     }
   }
 
