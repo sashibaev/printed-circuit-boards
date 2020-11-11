@@ -210,14 +210,14 @@
   .products-services ul {
     flex-direction: column;
     flex-wrap: nowrap;
-    max-width: auto;
+    max-width: none;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .products-services__wrapper {
-    max-width: auto;
+    max-width: none;
     width: 768px;
     margin: 0 auto;
     padding-top: 50px;
@@ -284,7 +284,6 @@
   .products-services ul {
     flex-direction: column;
     flex-wrap: nowrap;
-    max-width: auto;
     width: 100%;
     margin: 0;
     padding: 0;

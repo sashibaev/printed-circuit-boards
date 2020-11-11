@@ -318,7 +318,7 @@
   }
 
   .home-screen__wrapper {
-    max-width: auto;
+    max-width: none;
     width: 768px;
     padding-top: 37px;
     padding-left: 85px;
@@ -397,7 +397,7 @@
   }
 
   .home-screen__link-additional {
-    display: auto;
+    display: inline-block;
   }
 
   .home-screen__link-main {

@@ -133,7 +133,7 @@
 
 @media (max-width: $tablet-width) {
   .advantages {
-    max-width: auto;
+    max-width: none;
     width: 768px;
     margin: 0 auto;
     padding: 0;
@@ -202,7 +202,7 @@
   }
 
   .advantages ul {
-    max-width: auto;
+    max-width: none;
     width: 768px;
   }
 
