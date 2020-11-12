@@ -5,6 +5,8 @@ window.main = (function () {
   var buttonContacts = document.querySelector('.page-footer__contacts-button');
   var navList = document.querySelector('.page-footer__nav-wrapper');
   var contactsList = document.querySelector('.page-footer__contacts-list');
+  var scrollLink = document.querySelector('.home-screen__scroll-link');
+  var anchorAdvantages = document.querySelector('#advantages');
 
   if (buttonNav) {
     buttonNav.classList.add('page-footer__button-menu');
@@ -30,5 +32,16 @@ window.main = (function () {
   buttonContacts.addEventListener('click', function () {
     buttonContacts.classList.toggle('page-footer__button-menu');
     contactsList.classList.toggle('page-footer__accordion');
+  });
+
+  scrollLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    if (anchorAdvantages) {
+      anchorAdvantages.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   });
 })();
