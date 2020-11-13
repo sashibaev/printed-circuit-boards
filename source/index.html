@@ -168,7 +168,13 @@
         <div class="feedback__wrapper">
           <div class="feedback__img-wrapper">
             <span></span>
-            <img src="img/paper_airplane.svg" width="511"  height="288" alt="Самолет в 3Д исполнении">
+            <picture>
+              <!-- 1х: 511px; 2x: 1022px -->
+              <source type="image/webp" srcset="img/paper_airplane.webp 1x, img/paper_airplane@2x.webp 2x">
+
+              <!-- 1х: 511px; 2x: 1022px -->
+              <img src="img/paper_airplane.png" srcset="img/paper_airplane@2x.png" width="511"  height="288" alt="Самолет в 3Д исполнении">
+            </picture>
           </div>
           <div class="feedback__form-wrapper" id="form">
             <div class="feedback__text-wrapper">
@@ -187,7 +193,7 @@
                 </li>
               </ul>
               <p>
-                <textarea name="text" id="comments" cols="78" rows="10" placeholder="Ваш вопрос" required></textarea>
+                <textarea name="text" id="comments" cols="78" rows="10" placeholder="Ваш вопрос" aria-label="Описать подробнеев вопросе" required></textarea>
               </p>
               <div class="feedback__button">
                 <button class="feedback__submit" type="submit">Задать вопрос</button>

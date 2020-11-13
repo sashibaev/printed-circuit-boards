@@ -349,9 +349,14 @@
     display: none;
   }
 
+  .feedback__list li {
+    width: 280px;
+    height: 52px;
+  }
+
   .feedback__list input {
     width: 280px;
-    min-height: 52px;
+    height: 52px;
   }
 
   .feedback__text-wrapper h2 {

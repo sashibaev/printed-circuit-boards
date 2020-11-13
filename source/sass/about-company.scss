@@ -11,13 +11,17 @@
 
 .about-company::before {
   position: absolute;
-  content: url("../img/mask_group_desktop.svg");
+  content: url("../img/mask_group_desktop.png");
   top: 80px;
   left: 44px;
   z-index: 2;
 
   width: 220px;
   height: 317px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    content: url("../img/Mask_Group_desktop@2x.png");
+  }
 }
 
 .about-company::after {
@@ -105,12 +109,16 @@
   }
 
   .about-company::before {
-    content: url("../img/mask_group_tablet.svg");
+    content: url("../img/mask_group_tablet.webp");
     top: 24px;
     left: 0;
 
     width: 244px;
     height: 362px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: url("../img/mask_group_tablet@2x.webp");
+    }
   }
 
   .about-company::after {
