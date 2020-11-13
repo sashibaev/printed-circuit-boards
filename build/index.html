@@ -91,7 +91,7 @@
           </a>
         </div>
         <div class="page-header__feedback">
-          <a href="">Заказать звонок</a>
+          <a href="#">Заказать звонок</a>
         </div>
       </div>
     </header>
@@ -123,7 +123,7 @@
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
             <div class="home-screen__button">
-              <a class="home-screen__link-main" href="#">Получить бесплатную консультацию</a>
+              <a class="home-screen__link-main" href="#form">Получить бесплатную консультацию</a>
               <a class="home-screen__link-additional" href="#">Бесплатная консультация</a>
             </div>
             <div class="home-screen__scroll">
@@ -212,7 +212,7 @@
             <span></span>
             <img src="img/paper_airplane.svg" width="511" height="288" alt="Самолет в 3Д исполнении">
           </div>
-          <div class="feedback__form-wrapper">
+          <div class="feedback__form-wrapper" id="form">
             <div class="feedback__text-wrapper">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
@@ -229,10 +229,10 @@
                 </li>
               </ul>
               <p>
-                <textarea name="text" cols="78" rows="10" placeholder="Ваш вопрос" required=""></textarea>
+                <textarea name="text" id="comments" cols="78" rows="10" placeholder="Ваш вопрос" required=""></textarea>
               </p>
               <div class="feedback__button">
-                <button type="submit">Задать вопрос</button>
+                <button class="feedback__submit" type="submit">Задать вопрос</button>
                 <div class="feedback__checkbox">
                   <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked="" required="">
                   <label for="checkbox">
@@ -242,7 +242,7 @@
                       </svg>
                     </span>
                     Я согласен на обработку персональных данных
-                 </label>
+                  </label>
                 </div>
               </div>
             </form>
@@ -351,6 +351,40 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Модальное окно "Закажите звонок" -->
+    <section class="form-popup hidden">
+      <button class="form-popup__close" type="button" aria-label="Закрыть форму"></button>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="form-popup__form" action="#" method="post" autocomplete="off">
+        <ul class="form-popup__list">
+          <li>
+            <label class="visually-hidden" for="popup-name">Ввести имя</label>
+            <input type="text" name="name" id="popup-name" placeholder="Имя" autofocus="" required="">
+          </li>
+          <li>
+            <label class="visually-hidden" for="popup-tel">Ввести номер телефона</label>
+            <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" minlength="11" maxlength="11" required="" pattern="\S+[0-9]+">
+          </li>
+          <li class="form-popup__item">
+            <textarea name="text" cols="48" rows="6" placeholder="Ваш вопрос" id="popup-comments" required=""></textarea>
+          </li>
+        </ul>
+        <button class="form-popup_submit" type="submit">Отправить</button>
+        <div class="form-popup__checkbox">
+          <input class="visually-hidden" type="checkbox" name="popup-checkbox" id="popup-checkbox" checked="" required="">
+          <label for="popup-checkbox">
+            <span>
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-vector"></use>
+              </svg>
+            </span>
+            Я согласен на обработку &nbsp;персональных данных
+          </label>
+        </div>
+      </form>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
