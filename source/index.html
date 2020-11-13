@@ -183,7 +183,7 @@
                 </li>
                 <li>
                   <label class="visually-hidden" for="tel">Ввести номер телефона</label>
-                  <input type="tel" name="tel" id="tel" placeholder="Телефон" minlength="11" maxlength="11" required pattern="\S+[0-9]+">
+                  <input type="tel" name="tel" id="tel" placeholder="Телефон" pattern="\S+[0-9]+" required>
                 </li>
               </ul>
               <p>
@@ -319,11 +319,11 @@
         <ul class="form-popup__list">
           <li>
             <label class="visually-hidden" for="popup-name">Ввести имя</label>
-            <input type="text" name="name" id="popup-name" placeholder="Имя" autofocus required>
+            <input type="text" name="name" id="popup-name" placeholder="Имя" required>
           </li>
           <li>
             <label class="visually-hidden" for="popup-tel">Ввести номер телефона</label>
-            <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" minlength="11" maxlength="11" required pattern="\S+[0-9]+">
+            <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" pattern="\S+[0-9]+" required>
           </li>
           <li class="form-popup__item">
             <textarea name="text" cols="48" rows=6 placeholder="Ваш вопрос" id="popup-comments" required></textarea>
@@ -344,7 +344,7 @@
       </form>
     </section>
 
-    <script src="js/main.js"></script>
     <script src="js/inputmask.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
