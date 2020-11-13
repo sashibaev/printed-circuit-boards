@@ -108,6 +108,10 @@ html {
   width: 330px;
   margin-left: 48px; }
 
+.form-popup__checkbox:hover,
+.form-popup__checkbox:focus {
+  opacity: 0.7; }
+
 .form-popup__checkbox span {
   position: absolute;
   content: "";
@@ -161,7 +165,12 @@ html {
   color: #ffffff;
   background-color: #00b2ff;
   border: 1px solid #ffffff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
+
+.form-popup__form button:hover,
+.form-popup__form button:focus {
+  opacity: 0.7; }
 
 .form-popup h2 {
   margin: 0;
@@ -198,7 +207,8 @@ html {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   background-color: transparent;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .form-popup__list input::-webkit-input-placeholder {
   color: #ffffff; }
@@ -214,6 +224,10 @@ html {
 
 .form-popup__list input::placeholder {
   color: #ffffff; }
+
+.form-popup__list input:hover,
+.form-popup__list input:focus {
+  outline: 1px solid #ffffff; }
 
 .form-popup__list li {
   width: 100%;
@@ -232,7 +246,8 @@ html {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   background-color: transparent;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .form-popup__list textarea::-webkit-input-placeholder {
   color: #ffffff; }
@@ -248,6 +263,10 @@ html {
 
 .form-popup__list textarea::placeholder {
   color: #ffffff; }
+
+.form-popup__list textarea:hover,
+.form-popup__list textarea:focus {
+  outline: 1px solid #ffffff; }
 
 .form-popup__list .form-popup__item {
   height: 104px; }
@@ -1470,11 +1489,19 @@ html {
   border-radius: 5px;
   cursor: pointer; }
 
+.feedback__button button:hover,
+.feedback__button button:focus {
+  opacity: 0.7; }
+
 .feedback__checkbox {
   position: relative;
   width: 230px;
   margin: 0;
   padding-top: 5px; }
+
+.feedback__checkbox:hover,
+.feedback__checkbox:focus {
+  opacity: 0.7; }
 
 .feedback__checkbox label {
   font-size: 14px;
@@ -1525,6 +1552,10 @@ html {
   color: #ffffff;
   background-color: transparent;
   border: none; }
+
+.feedback__form textarea:hover,
+.feedback__form textarea:focus {
+  outline: 1px solid #ffffff; }
 
 .feedback__form textarea::-webkit-input-placeholder {
   color: #ffffff; }
@@ -1637,6 +1668,10 @@ html {
   color: #ffffff;
   background-color: transparent;
   border: none; }
+
+.feedback__list input:hover,
+.feedback__list input:focus {
+  outline: 1px solid #ffffff; }
 
 .feedback__list input::-webkit-input-placeholder {
   color: #ffffff; }

@@ -14,18 +14,18 @@ window.main = (function () {
   var consultationMobile = document.querySelector('.home-screen__link-additional');
   var anchorAdvantages = document.querySelector('#advantages');
   var anchorForm = document.querySelector('#form');
+  var openPopup = document.querySelector('.page-header__feedback');
   var formPopup = document.querySelector('.form-popup');
   var closePopup = formPopup.querySelector('.form-popup__close');
-  var openPopup = document.querySelector('.page-header__feedback');
   var sendDataFormPopup = formPopup.querySelector('.form-popup__submit');
-  var valueNameFormPopup = formPopup.querySelector('#popup-name');
-  var valueTelFormPopup = formPopup.querySelector('#popup-tel');
-  var valueCommentsFormPopup = formPopup.querySelector('#popup-comments');
+  var nameFormPopup = formPopup.querySelector('#popup-name');
+  var telFormPopup = formPopup.querySelector('#popup-tel');
+  var commentsFormPopup = formPopup.querySelector('#popup-comments');
   var form = document.querySelector('.feedback__form');
   var sendDataForm = form.querySelector('.feedback__submit');
-  var valueNameForm = formPopup.querySelector('#name');
-  var valueTelForm = formPopup.querySelector('#tel');
-  var valueCommentsForm = formPopup.querySelector('#comments');
+  var nameForm = form.querySelector('#name');
+  var telForm = form.querySelector('#tel');
+  var commentsForm = form.querySelector('#comments');
 
   var onPopupEscPress = function (evt) {
     if (evt.key === KEY_ESC) {
@@ -75,7 +75,7 @@ window.main = (function () {
 
   formPopup.addEventListener('submit', function (evt) {
     if (evt.target !== sendDataFormPopup) {
-      onSendData(valueNameFormPopup, valueTelFormPopup, valueCommentsFormPopup);
+      onSendData(nameFormPopup, telFormPopup, commentsFormPopup);
     }
 
     evt.preventDefault();
@@ -84,11 +84,10 @@ window.main = (function () {
 
   form.addEventListener('submit', function (evt) {
     if (evt.target !== sendDataForm) {
-      onSendData(valueNameForm, valueTelForm, valueCommentsForm);
+      onSendData(nameForm, telForm, commentsForm);
     }
 
     evt.preventDefault();
-    closeFormPopup();
   });
 
   if (buttonNav) {
@@ -140,4 +139,9 @@ window.main = (function () {
     onMakeMove(anchorForm);
     evt.preventDefault();
   });
+  /*
+  var inputTelFormPopup = document.querySelector('#popup-tel');
+  var im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(inputTelFormPopup);
+  */
 })();

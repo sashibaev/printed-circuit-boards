@@ -34,12 +34,22 @@
   cursor: pointer;
 }
 
+.feedback__button button:hover,
+.feedback__button button:focus {
+  opacity: 0.7;
+}
+
 .feedback__checkbox {
   position: relative;
 
   width: 230px;
   margin: 0;
   padding-top: 5px;
+}
+
+.feedback__checkbox:hover,
+.feedback__checkbox:focus {
+  opacity: 0.7;
 }
 
 .feedback__checkbox label {
@@ -102,6 +112,11 @@
 
   background-color: transparent;
   border: none;
+}
+
+.feedback__form textarea:hover,
+.feedback__form textarea:focus {
+  outline: 1px solid $light-color;
 }
 
 .feedback__form textarea::placeholder {
@@ -223,6 +238,11 @@
 
   background-color: transparent;
   border: none;
+}
+
+.feedback__list input:hover,
+.feedback__list input:focus {
+  outline: 1px solid $light-color;
 }
 
 .feedback__list input::placeholder {

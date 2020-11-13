@@ -23,6 +23,11 @@
   margin-left: 48px;
 }
 
+.form-popup__checkbox:hover,
+.form-popup__checkbox:focus {
+  opacity: 0.7;
+}
+
 .form-popup__checkbox span {
   position: absolute;
   content: "";
@@ -90,6 +95,13 @@
   background-color: $color-color;
   border: 1px solid $light-color;
   border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.form-popup__form button:hover,
+.form-popup__form button:focus {
+  opacity: 0.7;
 }
 
 .form-popup h2 {
@@ -136,10 +148,17 @@
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .form-popup__list input::placeholder {
   color: $light-color;
+}
+
+.form-popup__list input:hover,
+.form-popup__list input:focus {
+  outline: 1px solid $light-color;
 }
 
 .form-popup__list li {
@@ -165,10 +184,17 @@
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .form-popup__list textarea::placeholder {
   color: $light-color;
+}
+
+.form-popup__list textarea:hover,
+.form-popup__list textarea:focus {
+  outline: 1px solid $light-color;
 }
 
 .form-popup__list .form-popup__item {
