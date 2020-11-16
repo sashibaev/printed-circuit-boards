@@ -5,6 +5,7 @@ window.main = (function () {
   var KEY_ESC = 'Escape';
   var MAIN_MOUSE_BUTTON = 1;
 
+  var body = document.querySelector('body');
   var buttonNav = document.querySelector('.page-footer__nav-button');
   var buttonContacts = document.querySelector('.page-footer__contacts-button');
   var navList = document.querySelector('.page-footer__nav-wrapper');
@@ -42,6 +43,7 @@ window.main = (function () {
   var onOpenFormPopup = function () {
     formPopup.classList.remove('hidden');
     nameFormPopup.focus();
+    body.classList.add('modal-open');
 
     document.addEventListener('mousedown', onPopupOverlayPress);
     document.addEventListener('keydown', onPopupEscPress);
@@ -56,6 +58,7 @@ window.main = (function () {
   var closeFormPopup = function () {
     resetForm(nameFormPopup, telFormPopup, commentsFormPopup);
     formPopup.classList.add('hidden');
+    body.classList.remove('modal-open');
 
     document.removeEventListener('mousedown', onPopupOverlayPress);
     document.removeEventListener('keydown', onPopupEscPress);

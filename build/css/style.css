@@ -62,6 +62,10 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+.modal-open {
+  height: 100vh;
+  overflow: hidden; }
+
 .hidden {
   display: none; }
 
@@ -208,6 +212,7 @@ html {
   color: #ffffff;
   background-color: transparent;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
 
 .form-popup__list input::-webkit-input-placeholder {
@@ -247,6 +252,7 @@ html {
   color: #ffffff;
   background-color: transparent;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
 
 .form-popup__list textarea::-webkit-input-placeholder {
@@ -1559,7 +1565,8 @@ html {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   background-color: transparent;
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 .feedback__form textarea:hover,
 .feedback__form textarea:focus {
@@ -1675,7 +1682,8 @@ html {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   background-color: transparent;
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 .feedback__list input:hover,
 .feedback__list input:focus {
@@ -1839,8 +1847,9 @@ html {
     margin-bottom: 25px;
     margin-left: 0; }
   .feedback__wrapper {
-    width: 100%;
-    min-width: 320px; } }
+    width: 320px;
+    min-width: 320px;
+    margin: 0 auto; } }
 
 /* Подвал сайта */
 .page-footer {
