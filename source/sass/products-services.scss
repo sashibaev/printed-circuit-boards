@@ -94,6 +94,8 @@
 }
 
 .products-services li {
+  position: relative;
+
   margin: 0;
   margin-right: 15px;
   margin-bottom: 30px;
@@ -102,7 +104,7 @@
   list-style: none;
 }
 
-.products-services span {
+.products-services li::before {
   position: absolute;
   content: "";
   bottom: 0;
@@ -116,7 +118,7 @@
   background-color: $background-button-color;
 }
 
-.products-services span::after {
+.products-services li::after {
   position: absolute;
   content: url("../img/vector.svg");
   bottom: 34px;

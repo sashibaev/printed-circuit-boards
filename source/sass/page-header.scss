@@ -38,7 +38,16 @@
   height: 14px;
 }
 
-.page-header__feedback {
+.page-header__feedback:hover,
+.page-header__feedback:focus {
+  opacity: 0.5;
+}
+
+.page-header__feedback:active {
+  opacity: 0.8;
+}
+
+.page-header__wrapper > a {
   display: block;
   width: 180px;
   min-height: 45px;
@@ -51,22 +60,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: $font-family-main;
+  color: $light-color;
 
   border: 1px solid $light-color;
   border-radius: 5px;
-}
-
-.page-header__feedback:hover,
-.page-header__feedback:focus {
-  opacity: 0.5;
-}
-
-.page-header__feedback:active {
-  opacity: 0.8;
-}
-
-.page-header__feedback a {
-  color: $light-color;
 }
 
 .page-header__logo {
@@ -198,7 +195,7 @@
     height: 18px;
   }
 
-  .page-header__feedback {
+  .page-header__wrapper > a {
     display: none;
   }
 
