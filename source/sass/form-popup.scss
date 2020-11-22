@@ -23,9 +23,13 @@
   margin-left: 48px;
 }
 
-.form-popup__checkbox:hover,
-.form-popup__checkbox:focus {
+.form-popup__checkbox:hover {
   opacity: 0.7;
+}
+
+.form-popup__checkbox input:focus + label {
+  color: $dark-color;
+  opacity: 0.5;
 }
 
 .form-popup__checkbox span {
@@ -72,6 +76,12 @@
   background-size: 17px 17px;
 
   border: none;
+  cursor: pointer;
+}
+
+.form-popup__close:hover,
+.form-popup__close:focus {
+  opacity: 0.7;
 }
 
 .form-popup__form {

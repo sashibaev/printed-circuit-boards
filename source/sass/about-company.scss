@@ -6,21 +6,27 @@
   padding-top: 75px;
   padding-right: 40px;
   padding-bottom: 109px;
-  padding-left: 254px;
+  padding-left: 245px;
 }
 
 .about-company::before {
   position: absolute;
-  content: url("../img/mask_group_desktop.png");
-  top: 80px;
-  left: 44px;
+  content: "";
+  top: 79px;
+  left: 35px;
   z-index: 2;
 
   width: 220px;
   height: 317px;
 
+  background-color: transparent;
+  background-image: url("../img/mask_group_desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 220px 317px;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    content: url("../img/Mask_Group_desktop@2x.png");
+    background-image: url("../img/Mask_Group_desktop@2x.png");
   }
 }
 
@@ -28,7 +34,7 @@
   position: absolute;
   content: url("../img/Polygon_4_desktop.svg");
   top: -167px;
-  left: -300px;
+  left: -310px;
   z-index: 2;
 
   width: 537px;
@@ -109,15 +115,17 @@
   }
 
   .about-company::before {
-    content: url("../img/mask_group_tablet.webp");
     top: 24px;
     left: 0;
 
     width: 244px;
     height: 362px;
 
+    background-image: url("../img/mask_group_tablet.webp");
+    background-size: 244px 362px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      content: url("../img/mask_group_tablet@2x.webp");
+      background-image: url("../img/mask_group_tablet@2x.webp");
     }
   }
 

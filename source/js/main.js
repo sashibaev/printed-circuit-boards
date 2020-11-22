@@ -34,6 +34,12 @@ window.main = (function () {
     }
   };
 
+  var onPopupEnterPress = function (evt) {
+    if (evt.key === KEY_ENTER) {
+      closePopup();
+    }
+  };
+
   var onPopupOverlayPress = function (evt) {
     if (evt.which === MAIN_MOUSE_BUTTON && !(evt.target).closest('.form-popup')) {
       closeFormPopup();
@@ -47,6 +53,7 @@ window.main = (function () {
 
     document.addEventListener('mousedown', onPopupOverlayPress);
     document.addEventListener('keydown', onPopupEscPress);
+    document.addEventListener('keydown', onPopupEnterPress);
   };
 
   var resetForm = function (element1, element2, element3) {
@@ -62,6 +69,7 @@ window.main = (function () {
 
     document.removeEventListener('mousedown', onPopupOverlayPress);
     document.removeEventListener('keydown', onPopupEscPress);
+    document.removeEventListener('keydown', onPopupEnterPress);
   };
 
   openPopup.addEventListener('click', function () {

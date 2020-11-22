@@ -113,9 +113,12 @@ html {
   width: 330px;
   margin-left: 48px; }
 
-.form-popup__checkbox:hover,
-.form-popup__checkbox:focus {
+.form-popup__checkbox:hover {
   opacity: 0.7; }
+
+.form-popup__checkbox input:focus + label {
+  color: #1b2d37;
+  opacity: 0.5; }
 
 .form-popup__checkbox span {
   position: absolute;
@@ -151,7 +154,12 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 17px 17px;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+
+.form-popup__close:hover,
+.form-popup__close:focus {
+  opacity: 0.7; }
 
 .form-popup__form {
   padding-right: 20px; }
@@ -436,7 +444,7 @@ html {
 
 .page-header__wrapper {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,8 +457,8 @@ html {
   max-width: 1484px;
   height: 120px;
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 43px; }
+  padding-right: 38px;
+  padding-left: 34px; }
 
 @media (max-width: 1023px) {
   .page-header::before {
@@ -469,7 +477,8 @@ html {
   .page-header__nav-list {
     min-width: 82px;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 15px; }
   .page-header__nav-list a {
     display: block;
     margin: 0; }
@@ -484,12 +493,12 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     max-width: none;
     width: 768px;
-    height: 94px;
+    height: 75px;
     padding-right: 24px;
     padding-left: 25px; } }
 
@@ -508,11 +517,12 @@ html {
   .page-header__logo-text {
     display: none; }
   .page-header__nav-list {
-    min-width: 72px; }
+    min-width: 72px;
+    padding-bottom: 8px; }
   .page-header__wrapper {
     width: auto;
     min-width: 320px;
-    height: 74px;
+    height: 59px;
     padding-right: 16px;
     padding-left: 16px; } }
 
@@ -574,45 +584,12 @@ html {
   display: none; }
 
 .home-screen__img {
-  position: relative;
-  top: -25px;
-  left: 10px;
-  z-index: 5;
-  width: 705px;
-  height: 515px; }
+  max-width: 750px;
+  height: 515px;
+  margin: 0 10px; }
 
-.home-screen__img-circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-left: 72px;
-  margin-top: 14px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 551px 0 0 0 #ffffff, -50px 199px 0 0 #ffffff, 111px 477px 0 0 #ffffff, 276px 476px 0 0 #ffffff;
-          box-shadow: 551px 0 0 0 #ffffff, -50px 199px 0 0 #ffffff, 111px 477px 0 0 #ffffff, 276px 476px 0 0 #ffffff; }
-
-.home-screen__img-wrapper {
-  position: relative;
-  width: 750px;
-  height: 515px; }
-
-.home-screen__img-wrapper::before {
-  position: absolute;
-  content: url("../img/Polygon_1_desktop.svg");
-  bottom: 18px;
-  left: 26px;
-  z-index: 2;
-  width: 325px;
-  height: 280px; }
-
-.home-screen__img-wrapper::after {
-  position: absolute;
-  content: url("../img/Polygon_2_desktop.svg");
-  bottom: 18px;
-  left: 78px;
-  z-index: 2;
-  width: 552px;
-  height: 478px; }
+.home-screen__img img {
+  width: 100%; }
 
 .home-screen__text {
   display: -webkit-box;
@@ -628,7 +605,7 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 780px;
+  max-width: 780px;
   padding-top: 57px; }
 
 .home-screen__text > a {
@@ -656,7 +633,7 @@ html {
   opacity: 0.8; }
 
 .home-screen__text h1 {
-  width: 718px;
+  width: 728px;
   margin: 0;
   margin-bottom: 27px;
   font-size: 80px;
@@ -699,23 +676,25 @@ html {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1920px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1586px;
   margin: 0 auto;
   padding: 0;
   padding-top: 138px;
   padding-bottom: 73px;
-  padding-left: 125px; }
+  padding-left: 82px;
+  background-image: url("../img/Polygon_1.svg"), url("../img/Polygon_1.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: 887px 354px, 939px 157px, 883px 351px, 936px 152px, 1485px 152px, 1045px 629px, 1210px 628px;
+  background-size: 325px 280px, 552px 478px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px; }
 
 @media (max-width: 1023px) {
   .home-screen::before {
     background-image: url("../img/image_2_fon_tablet.webp");
     background-repeat: no-repeat;
-    background-position: 0 -94px;
+    background-position: 0 -75px;
     background-size: 100% 873px; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .home-screen::before {
@@ -728,39 +707,12 @@ html {
     width: 379px;
     margin: 0; }
   .home-screen__img {
-    top: 23px;
-    left: 5px;
     width: 260px;
-    height: 340px; }
-  .home-screen__img-circle {
-    width: 8px;
-    height: 8px;
-    margin-left: -7px;
-    margin-top: -49px;
-    -webkit-box-shadow: -40px 157px 0 0 #ffffff, 87px 376px 0 0 #ffffff, 217px 376px 0 0 #ffffff;
-            box-shadow: -40px 157px 0 0 #ffffff, 87px 376px 0 0 #ffffff, 217px 376px 0 0 #ffffff; }
-  .home-screen__img-wrapper {
-    width: 260px;
-    height: 340px; }
-  .home-screen__img-wrapper::before {
-    position: absolute;
-    content: url("../img/Polygon_1_tablet.svg");
-    bottom: 8px;
-    left: -45px;
-    z-index: 2;
-    width: 256px;
-    height: 221px; }
-  .home-screen__img-wrapper::after {
-    position: absolute;
-    content: url("../img/Polygon_2_tablet.svg");
-    bottom: 8px;
-    left: -4px;
-    z-index: 2;
-    width: 270px;
-    height: 378px; }
+    height: 340px;
+    margin: 0; }
   .home-screen__text {
     width: 415px;
-    padding-top: 57px; }
+    padding-top: 76px; }
   .home-screen__text > a {
     display: none; }
   .home-screen__text h1 {
@@ -784,12 +736,16 @@ html {
     width: 768px;
     padding-top: 37px;
     padding-bottom: 70px;
-    padding-left: 85px; } }
+    padding-left: 88px;
+    background-image: url("../img/Polygon_1.svg"), url("../img/Polygon_1.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: 460px 168px, 499px -46px, 457px 164px, 497px 7px, 584px 383px, 714px 382px;
+    background-size: 256px 221px, 438px 492px, 8px 8px, 8px 8px, 8px 8px, 8px 8px; } }
 
 @media (max-width: 767px) {
   .home-screen::before {
     background-image: url("../img/image_2_fon_mobile.webp");
-    background-position: 0 -74px;
+    background-position: 0 -59px;
     background-size: 100% 834px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .home-screen::before {
@@ -807,41 +763,21 @@ html {
   .home-screen__button span {
     display: none; }
   .home-screen__img {
-    top: 15px;
-    left: 25px;
     width: 294px;
-    height: 220px; }
-  .home-screen__img-circle {
-    width: 8px;
-    height: 8px;
-    margin-left: 206px;
-    margin-top: -5px;
-    -webkit-box-shadow: 83px 360px 0 0 #ffffff;
-            box-shadow: 83px 360px 0 0 #ffffff; }
-  .home-screen__img-wrapper {
-    width: 300px;
-    height: 212px; }
-  .home-screen__img-wrapper::before {
-    content: url("../img/Polygon_1_mobile.svg");
-    bottom: -148px;
-    left: 170px;
-    width: 150px;
-    height: 211px; }
-  .home-screen__img-wrapper::after {
-    content: url("../img/Polygon_2_mobile.svg");
-    top: 0;
-    left: 210px;
-    width: 111px;
-    height: 361px; }
+    height: 220px;
+    margin-left: 26px; }
   .home-screen__link-additional {
     display: inline-block; }
   .home-screen__link-main {
     display: none; }
   .home-screen__text {
+    position: relative;
+    top: -25px;
+    z-index: 4;
     width: 320px;
     padding: 0;
     padding-right: 15px;
-    padding-bottom: 70px;
+    padding-bottom: 45px;
     padding-left: 15px; }
   .home-screen__text h1 {
     position: relative;
@@ -862,22 +798,22 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 320px;
-    padding: 0; } }
+    padding: 0;
+    padding-top: 32px;
+    background-image: url("../img/Polygon_1.svg"), url("../img/Polygon_1.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: 143px 164px, 208px -43px, 206px 11px, 289px 370px;
+    background-size: 300px 211px, 438px 492px, 8px 8px, 8px 8px; } }
 
 .advantages {
   position: relative;
   max-width: 1920px;
+  margin: 0 auto;
   padding-top: 113px;
-  padding-left: 16px; }
-
-.advantages::before {
-  position: absolute;
-  content: url("../img/Polygon_6_desktop.svg");
-  top: 398px;
-  right: 10px;
-  z-index: 2;
-  width: 336px;
-  height: 324px; }
+  background-image: url("../img/Polygon_6_desktop.svg"), url("../img/Polygon_3_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 1558px 397px, 200px 46px;
+  background-size: 336px 324px, 336px 324px; }
 
 .advantages h2 {
   margin: 0;
@@ -897,30 +833,26 @@ html {
   margin-bottom: 30px;
   margin-left: 15px;
   padding-top: 40px;
+  padding-bottom: 20px;
   padding-left: 42px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   list-style: none; }
 
-.advantages li:hover,
-.advantages li:focus {
+.advantages li:hover {
   padding-top: 41px;
   padding-left: 45px;
   background-color: #00b2ff;
-  border: none;
-  cursor: pointer; }
+  border: none; }
 
-.advantages li:hover h2,
-.advantages li:focus h2 {
+.advantages li:hover h2 {
   color: #ffffff; }
 
-.advantages li:hover p,
-.advantages li:focus p {
+.advantages li:hover p {
   color: #ffffff; }
 
-.advantages li:hover svg,
-.advantages li:focus svg {
+.advantages li:hover svg {
   fill: #ffffff; }
 
 .advantages .advantages__privacy {
@@ -955,15 +887,6 @@ html {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0; }
-
-.advantages ul::before {
-  position: absolute;
-  content: url("../img/Polygon_3_desktop.svg");
-  top: -67px;
-  left: -140px;
-  z-index: 2;
-  width: 336px;
-  height: 324px; }
 
 .advantages ul::after {
   position: absolute;
@@ -1020,7 +943,7 @@ html {
     max-width: none;
     width: 768px; }
   .advantages ul::before {
-    content: url("../img/Polygon_3_tablet.svg");
+    content: url("../img/Polygon_5_tablet.svg");
     top: 197px;
     left: 247px;
     width: 521px;
@@ -1068,7 +991,7 @@ html {
   .advantages ul {
     width: 320px; }
   .advantages ul::before {
-    content: url("../img/Polygon_3_mobile.svg");
+    content: url("../img/Polygon_5_mobile.svg");
     top: 774px;
     left: 0;
     width: 320px;
@@ -1081,25 +1004,30 @@ html {
   padding-top: 75px;
   padding-right: 40px;
   padding-bottom: 109px;
-  padding-left: 254px; }
+  padding-left: 245px; }
 
 .about-company::before {
   position: absolute;
-  content: url("../img/mask_group_desktop.png");
-  top: 80px;
-  left: 44px;
+  content: "";
+  top: 79px;
+  left: 35px;
   z-index: 2;
   width: 220px;
-  height: 317px; }
+  height: 317px;
+  background-color: transparent;
+  background-image: url("../img/mask_group_desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 220px 317px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-company::before {
-      content: url("../img/Mask_Group_desktop@2x.png"); } }
+      background-image: url("../img/Mask_Group_desktop@2x.png"); } }
 
 .about-company::after {
   position: absolute;
   content: url("../img/Polygon_4_desktop.svg");
   top: -167px;
-  left: -300px;
+  left: -310px;
   z-index: 2;
   width: 537px;
   height: 690px; }
@@ -1165,14 +1093,15 @@ html {
     padding-bottom: 85px;
     padding-left: 211px; }
   .about-company::before {
-    content: url("../img/mask_group_tablet.webp");
     top: 24px;
     left: 0;
     width: 244px;
-    height: 362px; } }
+    height: 362px;
+    background-image: url("../img/mask_group_tablet.webp");
+    background-size: 244px 362px; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .about-company::before {
-      content: url("../img/mask_group_tablet@2x.webp"); } }
+      background-image: url("../img/mask_group_tablet@2x.webp"); } }
 
 @media (max-width: 1023px) {
   .about-company::after {
@@ -1232,7 +1161,7 @@ html {
   position: relative;
   z-index: 2;
   display: block;
-  width: 370px;
+  width: 100%;
   height: 620px;
   margin: 0;
   padding: 0;
@@ -1245,7 +1174,7 @@ html {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 370px;
+  width: 100%;
   height: 620px;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
@@ -1265,7 +1194,7 @@ html {
 .products-services h2 {
   margin: 0;
   margin-bottom: 51px;
-  margin-left: 98px;
+  margin-left: 89px;
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
@@ -1301,6 +1230,7 @@ html {
 
 .products-services li {
   position: relative;
+  width: 30%;
   margin: 0;
   margin-right: 15px;
   margin-bottom: 30px;
@@ -1342,7 +1272,8 @@ html {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 15px; }
+  padding-right: 9px;
+  padding-left: 9px; }
 
 .products-services__wrapper {
   max-width: 1348px;
@@ -1393,7 +1324,8 @@ html {
   .products-services__parts a {
     padding-top: 50px; }
   .products-services li {
-    margin: 0 auto;
+    width: 715px;
+    margin: 0;
     margin-bottom: 46px; }
   .products-services ul {
     -webkit-box-orient: vertical;
@@ -1452,6 +1384,7 @@ html {
   .products-services__parts a {
     padding-top: 30px; }
   .products-services li {
+    width: 290px;
     margin: 0 auto;
     margin-bottom: 30px; }
   .products-services ul {
@@ -1512,8 +1445,11 @@ html {
   margin: 0;
   padding-top: 5px; }
 
-.feedback__checkbox:hover,
-.feedback__checkbox:focus {
+.feedback__checkbox:hover {
+  opacity: 0.7; }
+
+.feedback__checkbox input:focus + label {
+  color: #1b2d37;
   opacity: 0.7; }
 
 .feedback__checkbox label {
@@ -1606,72 +1542,22 @@ html {
   padding: 0; }
 
 .feedback__form-wrapper {
-  position: relative;
-  max-width: 580px;
-  margin: 0 24px;
+  width: 580px;
+  margin: 0 3.35%;
   padding-top: 90px;
-  padding-bottom: 114px; }
-
-.feedback__form-wrapper::before {
-  position: absolute;
-  content: url("../img/Polygon_9.svg");
-  top: 42px;
-  right: -360px;
-  z-index: 1;
-  width: 265px;
-  height: 255px; }
-
-.feedback__form-wrapper::after {
-  position: absolute;
-  content: url("../img/Polygon_10.svg");
-  bottom: -20px;
-  right: -375px;
-  z-index: 1;
-  width: 343px;
-  height: 405px; }
+  padding-bottom: 114px;
+  background-color: #00b2ff; }
 
 .feedback__img-wrapper {
-  position: relative;
-  width: 580px;
+  max-width: 511px;
   height: 500px;
-  margin: 0 17px; }
-
-.feedback__img-wrapper::before {
-  position: absolute;
-  content: url("../img/Polygon_7.svg");
-  top: 100px;
-  left: -100px;
-  z-index: 1;
-  width: 552px;
-  height: 478px; }
-
-.feedback__img-wrapper::after {
-  position: absolute;
-  content: url("../img/Polygon_8.svg");
-  top: 300px;
-  left: -150px;
-  z-index: 1;
-  width: 325px;
-  height: 280px; }
+  margin: 0 2.35%;
+  padding-top: 161px; }
 
 .feedback__img-wrapper img {
-  position: relative;
-  z-index: 2; }
-
-.feedback__img-wrapper span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin-top: 94px;
-  margin-bottom: 57px;
-  margin-left: 447px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  -webkit-box-shadow: -550px 0 0 0 #ffffff, -601px 199px 0 0 #ffffff, -440px 477px 0 0 #ffffff, -275px 477px 0 0 #ffffff;
-          box-shadow: -550px 0 0 0 #ffffff, -601px 199px 0 0 #ffffff, -440px 477px 0 0 #ffffff, -275px 477px 0 0 #ffffff; }
+  width: 100%; }
 
 .feedback__list input {
-  position: relative;
   width: 270px;
   height: 50px;
   padding-left: 15px;
@@ -1741,10 +1627,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 1920px;
   margin: 0 auto;
+  background-image: url("../img/Polygon_7.svg"), url("../img/Polygon_8.svg"), url("../img/Polygon_9.svg"), url("../img/Polygon_10.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg"), url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: 250px 100px, 200px 295px, 1642px 42px, 1577px 287px, 247px 94px, 797px 94px, 196px 293px, 357px 570px, 522px 570px;
+  background-size: 552px 478px, 325px 280px, 265px 255px, 343px 405px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
   overflow: hidden; }
 
 @media (max-width: 1023px) {
@@ -1772,10 +1660,6 @@ html {
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 105px; }
-  .feedback__form-wrapper::before {
-    content: none; }
-  .feedback__form-wrapper::after {
-    content: none; }
   .feedback__img-wrapper {
     display: none; }
   .feedback__list li {
@@ -1793,7 +1677,8 @@ html {
   .feedback__wrapper {
     display: block;
     max-width: none;
-    width: 768px; } }
+    width: 768px;
+    background-image: none; } }
 
 @media (max-width: 767px) {
   .feedback__button {
@@ -2031,7 +1916,8 @@ html {
   min-height: 52px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 12px; }
+  padding-right: 8px;
+  padding-left: 4px; }
 
 .page-footer__text-list li {
   margin: 0;
@@ -2044,6 +1930,17 @@ html {
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5; }
+
+.page-footer__text-list .page-footer__text-link {
+  opacity: 1; }
+
+.page-footer__text-list a {
+  opacity: 0.5;
+  color: #1b2d37; }
+
+.page-footer__text-list a:hover,
+.page-footer__text-list a:focus {
+  opacity: 1; }
 
 .page-footer__text-list li:last-child {
   margin-left: auto; }
@@ -2064,9 +1961,9 @@ html {
   max-width: 1476px;
   margin: 0 auto;
   padding-top: 65px;
-  padding-right: 24px;
+  padding-right: 34px;
   padding-bottom: 57px;
-  padding-left: 38px; }
+  padding-left: 29px; }
 
 @media (max-width: 1023px) {
   .page-footer {

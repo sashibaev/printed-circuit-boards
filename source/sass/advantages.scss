@@ -2,19 +2,16 @@
   position: relative;
 
   max-width: 1920px;
+  margin: 0 auto;
   padding-top: 113px;
-  padding-left: 16px;
-}
 
-.advantages::before {
-  position: absolute;
-  content: url("../img/Polygon_6_desktop.svg");
-  top: 398px;
-  right: 10px;
-  z-index: 2;
-
-  width: 336px;
-  height: 324px;
+  background-image: url("../img/Polygon_6_desktop.svg"),
+    url("../img/Polygon_3_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 1558px 397px,
+    200px 46px;
+  background-size: 336px 324px,
+    336px 324px;
 }
 
 .advantages h2 {
@@ -38,6 +35,7 @@
   margin-bottom: 30px;
   margin-left: 15px;
   padding-top: 40px;
+  padding-bottom: 20px;
   padding-left: 42px;
 
   background-color: $light-color;
@@ -47,29 +45,23 @@
   list-style: none;
 }
 
-.advantages li:hover,
-.advantages li:focus {
+.advantages li:hover {
   padding-top: 41px;
   padding-left: 45px;
 
   background-color: $color-color;
   border: none;
-
-  cursor: pointer;
 }
 
-.advantages li:hover h2,
-.advantages li:focus h2 {
+.advantages li:hover h2 {
   color: $light-color;
 }
 
-.advantages li:hover p,
-.advantages li:focus p {
+.advantages li:hover p {
   color: $light-color;
 }
 
-.advantages li:hover svg,
-.advantages li:focus svg {
+.advantages li:hover svg {
   fill: $light-color;
 }
 
@@ -111,17 +103,6 @@
 
 .advantages ul::before {
   position: absolute;
-  content: url("../img/Polygon_3_desktop.svg");
-  top: -67px;
-  left: -140px;
-  z-index: 2;
-
-  width: 336px;
-  height: 324px;
-}
-
-.advantages ul::after {
-  position: absolute;
   content: url("../img/Polygon_5_desktop.svg");
   top: 195px;
   left: 258px;
@@ -138,10 +119,8 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 55px;
-  }
 
-  .advantages::before {
-    content: none;
+    background-image: none;
   }
 
   .advantages h2 {
@@ -203,16 +182,12 @@
   }
 
   .advantages ul::before {
-    content: url("../img/Polygon_3_tablet.svg");
+    content: url("../img/Polygon_5_tablet.svg");
     top: 197px;
     left: 247px;
 
     width: 521px;
     height: 689px;
-  }
-
-  .advantages ul::after {
-    content: none;
   }
 }
 
@@ -286,7 +261,7 @@
   }
 
   .advantages ul::before {
-    content: url("../img/Polygon_3_mobile.svg");
+    content: url("../img/Polygon_5_mobile.svg");
     top: 774px;
     left: 0;
 

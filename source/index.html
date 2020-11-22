@@ -55,25 +55,22 @@
     <main class="page-main">
       <section class="page-main__home-screen home-screen">
         <div class="home-screen__wrapper">
-          <div class="home-screen__img-wrapper">
-            <div class="home-screen__img-circle"></div>
-            <div class="home-screen__img">
-              <picture>
-                <!-- 1х: 294px; 2x: 588px -->
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/Untitled12_mobile.webp 1x, img/Untitled12_mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Untitled12_tablet.webp 1x, img/Untitled12_tablet@2x.webp 2x">
-                <!-- 1х: 705px; 2x: 1410px -->
-                <source type="image/webp" srcset="img/Untitled12_desktop.webp 1x, img/Untitled12_desktop@2x.webp 2x">
+          <div class="home-screen__img">
+            <picture>
+              <!-- 1х: 294px; 2x: 588px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/Untitled12_mobile.webp 1x, img/Untitled12_mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/Untitled12_tablet.webp 1x, img/Untitled12_tablet@2x.webp 2x">
+              <!-- 1х: 705px; 2x: 1410px -->
+              <source type="image/webp" srcset="img/Untitled12_desktop.webp 1x, img/Untitled12_desktop@2x.webp 2x">
 
-                <!-- 1х: 294px; 2x: 588px -->
-                <source media="(max-width: 767px)" srcset="img/Untitled12_mobile.png 1x, img/Untitled12_mobile@2x.png 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(max-width: 1023px)" srcset="img/Untitled12_tablet.png 1x, img/Untitled12_tablet@2x.png 2x">
-                <!-- 1х: 705px; 2x: 1410px -->
-                <img src="img/Untitled12_desktop.png" srcset="img/Untitled12_desktop@2x.png" width="705" height="515" alt="Печатные платы">
-              </picture>
-            </div>
+              <!-- 1х: 294px; 2x: 588px -->
+              <source media="(max-width: 767px)" srcset="img/Untitled12_mobile.png 1x, img/Untitled12_mobile@2x.png 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(max-width: 1023px)" srcset="img/Untitled12_tablet.png 1x, img/Untitled12_tablet@2x.png 2x">
+              <!-- 1х: 705px; 2x: 1410px -->
+              <img src="img/Untitled12_desktop.png" srcset="img/Untitled12_desktop@2x.png" width="705" height="515" alt="Печатные платы">
+            </picture>
           </div>
           <div class="home-screen__text">
             <h1>Печатные платы</h1>
@@ -88,7 +85,7 @@
       </section>
       <section class="page-main__advantages advantages" id="advantages">
         <ul>
-          <li class="advantages__item advantages__deadlines" tabindex="0">
+          <li class="advantages__item advantages__deadlines">
             <svg width="29" height="35" viewBox="0 0 29 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-stopwatch"></use>
             </svg>
@@ -96,7 +93,7 @@
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
               производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
-          <li class="advantages__item advantages__providers" tabindex="0">
+          <li class="advantages__item advantages__providers">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-hired"></use>
             </svg>
@@ -104,14 +101,14 @@
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
-          <li class="advantages__privacy" tabindex="0">
+          <li class="advantages__privacy">
             <svg width="36" height="31" viewBox="0 0 36 31" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-detective"></use>
             </svg>
             <h2>Полная конфиденциальность</h2>
             <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
           </li>
-          <li class="advantages__cost" tabindex="0">
+          <li class="advantages__cost">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-tag"></use>
             </svg>
@@ -160,7 +157,6 @@
       <section class="page-main__feedback feedback">
         <div class="feedback__wrapper">
           <div class="feedback__img-wrapper">
-            <span></span>
             <picture>
               <!-- 1х: 511px; 2x: 1022px -->
               <source type="image/webp" srcset="img/paper_airplane.webp 1x, img/paper_airplane@2x.webp 2x">
@@ -186,7 +182,7 @@
                 </li>
               </ul>
               <p>
-                <textarea name="text" id="comments" cols="78" rows="10" placeholder="Ваш вопрос" aria-label="Описать подробнеев вопросе" required></textarea>
+                <textarea name="text" id="comments" cols="78" rows="10" placeholder="Ваш вопрос" aria-label="Описать подробнее в вопросе" required></textarea>
               </p>
               <div class="feedback__button">
                 <button class="feedback__submit" type="submit">Задать вопрос</button>
@@ -300,14 +296,16 @@
       <ul class="page-footer__text-list">
         <li class="page-footer__text-rights page-footer__text-item">Все права защищены</li>
         <li class="page-footer__text-next page-footer__text-item">1999-2018 SD Service Devices</li>
-        <li>Условия конфиденциальности</li>
+        <li class="page-footer__text-link">
+          <a href="#">Условия конфиденциальности</a>
+        </li>
         <li>Developed by wow studio</li>
       </ul>
     </footer>
 
     <!-- Модальное окно "Закажите звонок" -->
     <section class="form-popup hidden">
-      <button class="form-popup__close" type="button" aria-label="Закрыть форму"></button>
+      <button class="form-popup__close" type="button" aria-label="Закрыть форму" tabindex="0"></button>
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="form-popup__form" action="#" method="post" autocomplete="off">
@@ -321,7 +319,7 @@
             <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" pattern="\S+[0-9]+" required>
           </li>
           <li class="form-popup__item">
-            <textarea name="text" cols="48" rows=6 placeholder="Ваш вопрос" id="popup-comments" required></textarea>
+            <textarea name="text" cols="48" rows=6 placeholder="Ваш вопрос" id="popup-comments" aria-label="Описать подробнее в вопросе" required></textarea>
           </li>
         </ul>
         <button class="form-popup_submit" type="submit">Отправить</button>
