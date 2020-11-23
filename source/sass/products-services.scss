@@ -14,7 +14,14 @@
   margin: 0;
   padding: 0;
   padding-top: 51px;
+  padding-right: 155px;
   padding-left: 45px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: $font-family-main;
+  color: $light-color;
 }
 
 .products-services a::before {
@@ -54,17 +61,6 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
-  font-family: $font-family-main;
-  color: $light-color;
-}
-
-.products-services h3 {
-  width: 160px;
-  margin: 0;
-
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
   font-family: $font-family-main;
   color: $light-color;
 }
@@ -155,6 +151,7 @@
     width: 715px;
     height: 256px;
     padding-top: 40px;
+    padding-right: 500px;
     padding-left: 43px;
   }
 
@@ -172,10 +169,6 @@
 
     font-size: 32px;
     line-height: 45px;
-  }
-
-  .products-services h3 {
-    width: 160px;
   }
 
   .products-services__montage a::before {
@@ -235,6 +228,7 @@
     width: 290px;
     height: 256px;
     padding-top: 20px;
+    padding-right: 100px;
     padding-left: 35px;
   }
 

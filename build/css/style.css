@@ -888,7 +888,7 @@ html {
   margin: 0 auto;
   padding: 0; }
 
-.advantages ul::after {
+.advantages ul::before {
   position: absolute;
   content: url("../img/Polygon_5_desktop.svg");
   top: 195px;
@@ -903,9 +903,8 @@ html {
     width: 768px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 55px; }
-  .advantages::before {
-    content: none; }
+    padding-top: 55px;
+    background-image: none; }
   .advantages h2 {
     margin-bottom: 7px; }
   .advantages li {
@@ -947,9 +946,7 @@ html {
     top: 197px;
     left: 247px;
     width: 521px;
-    height: 689px; }
-  .advantages ul::after {
-    content: none; } }
+    height: 689px; } }
 
 @media (max-width: 767px) {
   .advantages {
