@@ -7,7 +7,9 @@ window.main = (function () {
 
   var body = document.querySelector('body');
   var buttonNav = document.querySelector('.page-footer__nav-button');
+  var buttonNavArea = document.querySelector('.page-footer__nav-button-area');
   var buttonContacts = document.querySelector('.page-footer__contacts-button');
+  var buttonContactsArea = document.querySelector('.page-footer__contacts-button-area');
   var navList = document.querySelector('.page-footer__nav-wrapper');
   var contactsList = document.querySelector('.page-footer__contacts-list');
   var scrollLink = document.querySelector('.home-screen__scroll-link');
@@ -126,12 +128,22 @@ window.main = (function () {
     contactsList.classList.add('page-footer__accordion');
   }
 
-  buttonNav.addEventListener('click', function () {
+  buttonNavArea.addEventListener('click', function () {
+    if (!buttonContacts.classList.contains('page-footer__button-menu')) {
+      buttonContacts.classList.add('page-footer__button-menu');
+      contactsList.classList.add('page-footer__accordion');
+    }
+
     buttonNav.classList.toggle('page-footer__button-menu');
     navList.classList.toggle('page-footer__accordion');
   });
 
-  buttonContacts.addEventListener('click', function () {
+  buttonContactsArea.addEventListener('click', function () {
+    if (!buttonNav.classList.contains('page-footer__button-menu')) {
+      buttonNav.classList.add('page-footer__button-menu');
+      navList.classList.add('page-footer__accordion');
+    }
+
     buttonContacts.classList.toggle('page-footer__button-menu');
     contactsList.classList.toggle('page-footer__accordion');
   });

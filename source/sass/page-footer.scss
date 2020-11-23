@@ -35,6 +35,11 @@
   display: none;
 }
 
+.page-footer__contacts-button-area {
+  margin: 0;
+  padding: 0;
+}
+
 .page-footer__contacts h2,
 .page-footer__nav h2 {
   margin: 0;
@@ -136,6 +141,11 @@
   min-width: 32%;
   margin-right: 100px;
   margin-left: 100px;
+}
+
+.page-footer__nav-button-area {
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__nav-list {
@@ -420,9 +430,13 @@
   }
 
   .page-footer__contacts {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .page-footer__contacts-button-area {
+    width: 100%;
   }
 
   .page-footer__contacts h2,
@@ -433,8 +447,9 @@
   .page-footer__contacts-list {
     position: relative;
 
-
+    width: 320px;
     height: 155px;
+    margin: 0 auto;
     padding-top: 6px;
     padding-left: 15px;
 
@@ -470,6 +485,8 @@
   .page-footer__header-item {
     display: flex;
     justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
     padding-top: 28px;
     padding-right: 15px;
     padding-bottom: 28px;
@@ -496,9 +513,13 @@
   }
 
   .page-footer__nav {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .page-footer__nav-button-area {
+    width: 100%;
   }
 
   .page-footer__nav-list--parameter {
@@ -509,7 +530,9 @@
     position: relative;
 
     flex-wrap: nowrap;
+    width: 320px;
     height: 230px;
+    margin: 0 auto;
     padding-left: 15px;
 
     overflow: hidden;
