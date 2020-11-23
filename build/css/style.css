@@ -363,9 +363,6 @@ html {
 .page-header__logo a:focus {
   opacity: 0.5; }
 
-.page-header__logo a:active {
-  opacity: 0.8; }
-
 .page-header__logo svg {
   width: 52px;
   height: 52px; }
@@ -1169,7 +1166,9 @@ html {
   font-weight: 400;
   line-height: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #ffffff; }
+  color: #ffffff;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); }
 
 .products-services a::before {
   position: absolute;
@@ -1187,9 +1186,7 @@ html {
 
 .products-services a:hover,
 .products-services a:focus {
-  outline: 1px solid #ffffff;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); }
+  outline: 1px solid #ffffff; }
 
 .products-services a:active {
   outline: 1px solid #c4c4c4; }
@@ -1294,24 +1291,24 @@ html {
     font-size: 32px;
     line-height: 45px; }
   .products-services__montage a::before {
-    background-image: url("../img/image_2_tablet.webp"); } }
+    background-image: url("../img/image_2_tablet.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .products-services__montage a::before {
-      background-image: url("../img/image_2_tablet@2x.webp"); } }
+      background-image: url("../img/image_2_tablet@2x.png"); } }
 
 @media (max-width: 1023px) {
   .products-services__parts a::before {
-    background-image: url("../img/image_4_tablet.webp"); } }
+    background-image: url("../img/image_4_tablet.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .products-services__parts a::before {
-      background-image: url("../img/image_4_tablet@2x.webp"); } }
+      background-image: url("../img/image_4_tablet@2x.png"); } }
 
 @media (max-width: 1023px) {
   .products-services__production a::before {
-    background-image: url("../img/image_tablet.webp"); } }
+    background-image: url("../img/image_tablet.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .products-services__production a::before {
-      background-image: url("../img/image_tablet@2x.webp"); } }
+      background-image: url("../img/image_tablet@2x.png"); } }
 
 @media (max-width: 1023px) {
   .products-services__parts a {
@@ -1355,24 +1352,24 @@ html {
     font-size: 28px;
     line-height: 39px; }
   .products-services__montage a::before {
-    background-image: url("../img/image_2_mobile.webp"); } }
+    background-image: url("../img/image_2_mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .products-services__montage a::before {
-      background-image: url("../img/image_2_mobile@2x.webp"); } }
+      background-image: url("../img/image_2_mobile@2x.png"); } }
 
 @media (max-width: 767px) {
   .products-services__parts a::before {
-    background-image: url("../img/image_4_mobile.webp"); } }
+    background-image: url("../img/image_4_mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .products-services__parts a::before {
-      background-image: url("../img/image_4_mobile@2x.webp"); } }
+      background-image: url("../img/image_4_mobile@2x.png"); } }
 
 @media (max-width: 767px) {
   .products-services__production a::before {
-    background-image: url("../img/image_mobile.webp"); } }
+    background-image: url("../img/image_mobile.png"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .products-services__production a::before {
-      background-image: url("../img/image_mobile@2x.webp"); } }
+      background-image: url("../img/image_mobile@2x.png"); } }
 
 @media (max-width: 767px) {
   .products-services__parts a {
