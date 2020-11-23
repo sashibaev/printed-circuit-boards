@@ -1163,7 +1163,13 @@ html {
   margin: 0;
   padding: 0;
   padding-top: 51px;
-  padding-left: 45px; }
+  padding-right: 155px;
+  padding-left: 45px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff; }
 
 .products-services a::before {
   position: absolute;
@@ -1195,15 +1201,6 @@ html {
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #ffffff; }
-
-.products-services h3 {
-  width: 160px;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff; }
 
@@ -1284,6 +1281,7 @@ html {
     width: 715px;
     height: 256px;
     padding-top: 40px;
+    padding-right: 500px;
     padding-left: 43px; }
   .products-services a::before {
     width: 715px;
@@ -1295,8 +1293,6 @@ html {
     margin-left: 24px;
     font-size: 32px;
     line-height: 45px; }
-  .products-services h3 {
-    width: 160px; }
   .products-services__montage a::before {
     background-image: url("../img/image_2_tablet.webp"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1347,6 +1343,7 @@ html {
     width: 290px;
     height: 256px;
     padding-top: 20px;
+    padding-right: 100px;
     padding-left: 35px; }
   .products-services a::before {
     width: 290px;
