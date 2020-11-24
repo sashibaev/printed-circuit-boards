@@ -1530,7 +1530,7 @@ html {
   padding: 0; }
 
 .feedback__form-wrapper {
-  width: 580px;
+  min-width: 580px;
   margin: 0 3.35%;
   padding-top: 90px;
   padding-bottom: 114px;
@@ -1642,8 +1642,7 @@ html {
     height: 160px;
     margin-bottom: 44px; }
   .feedback__form-wrapper {
-    position: static;
-    max-width: none;
+    min-width: 0;
     width: 590px;
     margin: 0 auto;
     padding-top: 80px;
@@ -1670,7 +1669,8 @@ html {
 
 @media (max-width: 767px) {
   .feedback__button {
-    display: block; }
+    display: block;
+    width: 100%; }
   .feedback__button button {
     width: 100%; }
   .feedback__checkbox {
@@ -1682,6 +1682,7 @@ html {
     top: 31px;
     left: 1px; }
   .feedback__form {
+    width: 100%;
     margin: 0; }
   .feedback__form ul {
     display: block;
@@ -1720,7 +1721,6 @@ html {
     margin-left: 0; }
   .feedback__wrapper {
     width: 320px;
-    min-width: 320px;
     margin: 0 auto; } }
 
 /* Подвал сайта */

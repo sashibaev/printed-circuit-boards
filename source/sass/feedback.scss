@@ -147,7 +147,7 @@
 }
 
 .feedback__form-wrapper {
-  width: 580px;
+  min-width: 580px;
   margin: 0 3.35%;
   padding-top: 90px;
   padding-bottom: 114px;
@@ -297,9 +297,7 @@
   }
 
   .feedback__form-wrapper {
-    position: static;
-
-    max-width: none;
+    min-width: 0;
     width: 590px;
     margin: 0 auto;
     padding-top: 80px;
@@ -343,6 +341,7 @@
 @media (max-width: $mobile-width) {
   .feedback__button {
     display: block;
+    width: 100%;
   }
 
   .feedback__button button {
@@ -362,6 +361,7 @@
   }
 
   .feedback__form {
+    width: 100%;
     margin: 0;
   }
 
@@ -422,7 +422,6 @@
 
   .feedback__wrapper {
     width: 320px;
-    min-width: 320px;
     margin: 0 auto;
   }
 }
