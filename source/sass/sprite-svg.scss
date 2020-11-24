@@ -1,3 +1,9 @@
 .sprite-svg {
   display: none;
 }
+
+@media (max-width: $mobile-width) {
+  .sprite-svg__logo-header {
+    display: none;
+  }
+}

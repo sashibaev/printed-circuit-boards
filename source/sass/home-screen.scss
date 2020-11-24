@@ -162,7 +162,6 @@
   z-index: 2;
 
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   max-width: 1586px;
   margin: 0 auto;
@@ -217,13 +216,22 @@
   }
 
   .home-screen__img {
-    width: 260px;
+    flex-shrink: 0;
+    max-width: none;
+    width: 465px;
     height: 340px;
     margin: 0;
+    margin-right: 20px;
+  }
+
+  .home-screen__img img {
+    width: 465px;
+    height: 340px;
   }
 
   .home-screen__text {
     width: 415px;
+    margin-right: 6px;
     padding-top: 76px;
   }
 
@@ -258,13 +266,15 @@
 
   .home-screen__wrapper {
     max-width: none;
-    width: 768px;
+    min-width: 768px;
+    margin: 0;
     padding-top: 37px;
     padding-bottom: 70px;
     padding-left: 88px;
 
     background-image: url("../img/Polygon_1.svg"),
       url("../img/Polygon_1.svg"),
+      url("../img/ellipse.svg"),
       url("../img/ellipse.svg"),
       url("../img/ellipse.svg"),
       url("../img/ellipse.svg"),
@@ -275,13 +285,17 @@
       457px 164px,
       497px 7px,
       584px 383px,
+      930px 7px,
       714px 382px;
     background-size: 256px 221px,
       438px 492px,
       8px 8px,
       8px 8px,
       8px 8px,
+      8px 8px,
       8px 8px;
+
+    overflow: hidden;
   }
 }
 
@@ -317,9 +331,14 @@
   }
 
   .home-screen__img {
-    width: 294px;
+    width: 301px;
     height: 220px;
     margin-left: 26px;
+  }
+
+  .home-screen__img img {
+    width: 301px;
+    height: 220px;
   }
 
   .home-screen__link-additional {
@@ -336,6 +355,7 @@
     z-index: 4;
 
     width: 320px;
+    margin: 0 auto;
     padding: 0;
     padding-right: 15px;
     padding-bottom: 45px;
@@ -362,22 +382,30 @@
   }
 
   .home-screen__wrapper {
-    flex-direction: column;
-    width: 320px;
+    flex-direction: column-reverse;
+    max-width: 560px;
+    min-width: 320px;
+    margin: 0 auto;
     padding: 0;
     padding-top: 32px;
 
     background-image: url("../img/Polygon_1.svg"),
       url("../img/Polygon_1.svg"),
       url("../img/ellipse.svg"),
+      url("../img/ellipse.svg"),
+      url("../img/ellipse.svg"),
       url("../img/ellipse.svg");
     background-repeat: no-repeat;
     background-position: 143px 164px,
       208px -43px,
       206px 11px,
+      408px 161px,
+      423px 385px,
       289px 370px;
     background-size: 300px 211px,
       438px 492px,
+      8px 8px,
+      8px 8px,
       8px 8px,
       8px 8px;
   }

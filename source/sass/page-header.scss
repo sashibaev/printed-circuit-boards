@@ -82,33 +82,9 @@
 }
 
 .page-header__logo svg {
-  width: 52px;
+  width: 202px;
   height: 52px;
-}
-
-.page-header__logo-text {
-  min-width: 200px;
-}
-
-.page-header__logo-text h2 {
-  margin: 0;
-  padding-top: 8px;
-
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-  font-family: $font-family-main;
-}
-
-.page-header__logo-text p {
-  margin: 0;
-  padding: 0;
-
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
-  font-family: $font-family-additional;
-  color: $less-light-color;
+  margin-top: 2px;
 }
 
 .page-header__nav-list {
@@ -191,6 +167,10 @@
     height: 18px;
   }
 
+  .page-header__logo svg {
+    margin-top: 0;
+  }
+
   .page-header__wrapper > a {
     display: none;
   }
@@ -243,12 +223,8 @@
   }
 
   .page-header__logo svg {
-    width: 38px;
+    width: 152px;
     height: 38px;
-  }
-
-  .page-header__logo-text {
-    display: none;
   }
 
   .page-header__nav-list {
@@ -261,6 +237,6 @@
     min-width: 320px;
     height: 59px;
     padding-right: 16px;
-    padding-left: 16px;
+    padding-left: 15px;
   }
 }
