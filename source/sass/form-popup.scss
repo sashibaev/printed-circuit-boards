@@ -9,7 +9,7 @@
   height: 100%;
 }
 
-.form-popup__back-background {
+.form-popup::before {
   position: fixed;
   content: "";
   top: 0;
