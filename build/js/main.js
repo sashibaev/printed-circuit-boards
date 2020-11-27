@@ -30,6 +30,25 @@ window.main = (function () {
   var telForm = form.querySelector('#tel');
   var commentsForm = form.querySelector('#comments');
 
+  var polyfill = function (ELEMENT) {
+    ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+    ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+      if (!this) {
+        return null;
+      }
+      if (this.matches(selector)) {
+        return this;
+      }
+      if (!this.parentElement) {
+        return null;
+      } else {
+        return this.parentElement.closest(selector);
+      }
+    };
+  };
+
+  polyfill(Element.prototype);
+
   var onPopupEscPress = function (evt) {
     if (evt.key === KEY_ESC) {
       closeFormPopup();
@@ -38,12 +57,12 @@ window.main = (function () {
 
   var onPopupEnterPress = function (evt) {
     if (evt.key === KEY_ENTER) {
-      closePopup();
+      closeFormPopup();
     }
   };
 
   var onPopupOverlayPress = function (evt) {
-    if (evt.which === MAIN_MOUSE_BUTTON && !(evt.target).closest('.form-popup')) {
+    if (evt.which === MAIN_MOUSE_BUTTON && !(evt.target).closest('.form-popup__wrapper')) {
       closeFormPopup();
     }
   };
