@@ -346,36 +346,39 @@
 
     <!-- Модальное окно "Закажите звонок" -->
     <section class="form-popup hidden">
-      <button class="form-popup__close" type="button" aria-label="Закрыть форму" tabindex="0"></button>
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="form-popup__form" action="#" method="post" autocomplete="off">
-        <ul class="form-popup__list">
-          <li>
-            <label class="visually-hidden" for="popup-name">Ввести имя</label>
-            <input type="text" name="name" id="popup-name" placeholder="Имя" required="">
-          </li>
-          <li>
-            <label class="visually-hidden" for="popup-tel">Ввести номер телефона</label>
-            <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" pattern="\S+[0-9]+" required="">
-          </li>
-          <li class="form-popup__item">
-            <textarea name="text" cols="48" rows="6" placeholder="Ваш вопрос" id="popup-comments" aria-label="Описать подробнее в вопросе" required=""></textarea>
-          </li>
-        </ul>
-        <button class="form-popup_submit" type="submit">Отправить</button>
-        <div class="form-popup__checkbox">
-          <input class="visually-hidden" type="checkbox" name="popup-checkbox" id="popup-checkbox" checked="" required="">
-          <label for="popup-checkbox">
-            <span>
-              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-vector"></use>
-              </svg>
-            </span>
-            Я согласен на обработку &nbsp;персональных данных
-          </label>
-        </div>
-      </form>
+      <div class="form-popup__back-background"></div>
+      <div class="form-popup__wrapper">
+        <button class="form-popup__close" type="button" aria-label="Закрыть форму" tabindex="0"></button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="form-popup__form" action="#" method="post" autocomplete="off">
+          <ul class="form-popup__list">
+            <li>
+              <label class="visually-hidden" for="popup-name">Ввести имя</label>
+              <input type="text" name="name" id="popup-name" placeholder="Имя" required="">
+            </li>
+            <li>
+              <label class="visually-hidden" for="popup-tel">Ввести номер телефона</label>
+              <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" pattern="\S+[0-9]+" required="">
+            </li>
+            <li class="form-popup__item">
+              <textarea name="text" cols="48" rows="6" placeholder="Ваш вопрос" id="popup-comments" aria-label="Описать подробнее в вопросе" required=""></textarea>
+            </li>
+          </ul>
+          <button class="form-popup_submit" type="submit">Отправить</button>
+          <div class="form-popup__checkbox">
+            <input class="visually-hidden" type="checkbox" name="popup-checkbox" id="popup-checkbox" checked="" required="">
+            <label for="popup-checkbox">
+              <span>
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-vector"></use>
+                </svg>
+              </span>
+              Я согласен на обработку &nbsp;персональных данных
+            </label>
+          </div>
+        </form>
+      </div>
     </section>
 
     <script src="js/vendor.js"></script>
